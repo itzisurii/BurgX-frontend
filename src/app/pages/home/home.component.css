@@ -1,0 +1,19 @@
+/* SECTION: FORCED HEIGHTS */
+:host {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Custom Scrollbar for a clean POS look */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-gray-200 rounded-full;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  @apply bg-red-500; /* Turns MOS Red on hover */
+}
