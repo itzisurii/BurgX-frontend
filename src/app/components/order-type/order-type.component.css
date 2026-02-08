@@ -1,0 +1,18 @@
+/* order-type.component.css */
+.type-btn {
+  @apply w-16 h-16 flex items-center justify-center rounded-2xl 
+         text-gray-400 transition-all duration-200 
+         hover:bg-gray-50 hover:text-gray-900 active:scale-90;
+}
+
+/* THE ACTIVE STATE (Red Outline) */
+.type-btn.active {
+  @apply text-red-600 bg-white border border-red-100 shadow-sm;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.08); /* Custom soft red glow */
+}
+
+/* Ensure the host takes up the full sidebar width */
+:host {
+  display: block;
+  width: 100%;
+}
