@@ -1,0 +1,42 @@
+/* SECTION: TOP BAR CUSTOM STYLES */
+
+/* Ensure the header stays fixed at the top if needed */
+header {
+  height: 70px; /* Consistent height for the top bar */
+  z-index: 1000;
+}
+
+/* Custom styling for the search input wrapper */
+.input-group {
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.input-group:focus-within {
+  background-color: #fff !important;
+  border-color: #dee2e6;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Remove focus ring from the input itself since the parent has it */
+.form-control:focus {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+/* Icon Buttons hover effect */
+.btn-light {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  transition: all 0.2s;
+}
+
+.btn-light:hover {
+  background-color: #e9ecef;
+  color: #af0c1d; /* Turns MOS Red on hover */
+}
+
+/* Logo styling */
+img {
+  object-fit: contain;
+}
