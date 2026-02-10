@@ -9,3 +9,11 @@ export interface MenuItem {
   prepTime?: string; 
 
 }
+
+export interface Table{
+  id: number;
+  status: 'available' | 'occupied' | 'cleaning';
+  seat: number;
+  amount: number;
+  time: string;
+}
