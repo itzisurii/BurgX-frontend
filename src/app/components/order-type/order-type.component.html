@@ -1,25 +1,45 @@
 <div class="flex flex-col items-center py-6 border-r border-gray-100 bg-white h-screen w-full">
   <div class="flex flex-col items-center gap-4 w-full px-2">
     
-    <button class="type-btn active" title="Dashboard">
+    <button 
+      class="type-btn" 
+      [class.active]="currentPanel === 'dashboard'" 
+      (click)="setPanel('dashboard')"
+      title="Dashboard">
       <i class="bi bi-grid-1x2-fill text-xl"></i>
     </button>
 
-    <button class="type-btn" title="All Orders">
+    <button 
+      class="type-btn" 
+      [class.active]="currentPanel === 'orders'" 
+      (click)="setPanel('orders')" 
+      title="All Orders">
       <i class="bi bi-list-ul text-xl"></i>
     </button>
 
-    <button class="type-btn" title="Dine In">
+    <button 
+      class="type-btn" 
+      [class.active]="currentPanel === 'dinein'" 
+      (click)="setPanel('dinein')"
+      title="Dine In">
       <i class="bi bi-shop text-xl"></i>
     </button>
 
-    <button class="type-btn" title="Takeaway">
+    <button 
+      class="type-btn" 
+      [class.active]="currentPanel === 'takeaway'" 
+      (click)="setPanel('takeaway')"
+      title="Takeaway">
       <i class="bi bi-bag-check text-xl"></i>
     </button>
 
-    <button class="type-btn" title="Delivery">
+    <button 
+      class="type-btn" 
+      [class.active]="currentPanel === 'delivery'" 
+      (click)="setPanel('delivery')"
+      title="Delivery">
       <i class="bi bi-truck text-xl"></i>
     </button>
-    
+
   </div>
 </div>
