@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Table } from '../../../model/menuItems';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-dine-in',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './dine-in.component.html',
   styleUrl: './dine-in.component.css'
 })
