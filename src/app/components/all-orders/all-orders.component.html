@@ -1,0 +1,225 @@
+<div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+        <div>
+            <h1 class="text-2xl font-bold">All Orders Tracker</h1>
+            <p class="text-slate-500 text-sm mt-1">Managing 18 active orders across all stations</p>
+        </div>
+        <div class="flex bg-white dark:bg-gray-800 p-1 rounded-lg border border-gray-200 dark:border-gray-700">
+            <button class="px-6 py-2 rounded-md text-sm font-semibold bg-primary text-white">All Orders</button>
+            <button
+                class="px-6 py-2 rounded-md text-sm font-semibold text-slate-500 hover:bg-slate-50 dark:hover:bg-gray-700 transition-colors">Preparing</button>
+            <button
+                class="px-6 py-2 rounded-md text-sm font-semibold text-slate-500 hover:bg-slate-50 dark:hover:bg-gray-700 transition-colors">Ready</button>
+        </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div
+            class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col">
+            <div
+                class="p-5 border-b border-gray-100 dark:border-gray-700 flex justify-between items-center bg-slate-50/50 dark:bg-gray-800/50">
+                <div>
+                    <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Order</span>
+                    <h3 class="text-lg font-bold">#1042</h3>
+                </div>
+                <span
+                    class="bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-amber-200 dark:border-amber-800">PREPARING</span>
+            </div>
+            <div class="p-5 flex-1 space-y-4">
+                <ul class="space-y-3">
+                    <li class="flex justify-between items-start">
+                        <span class="text-sm">1x <span class="font-semibold">MOS Rice Burger</span></span>
+                        <span class="text-xs text-slate-400">Regular</span>
+                    </li>
+                    <li class="flex justify-between items-start">
+                        <span class="text-sm">2x <span class="font-semibold">Melon Soda</span></span>
+                        <span class="text-xs text-slate-400">Large</span>
+                    </li>
+                    <li class="flex justify-between items-start">
+                        <span class="text-sm">1x <span class="font-semibold">French Fries (L)</span></span>
+                        <span class="text-xs text-slate-400">Sea Salt</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="p-5 pt-0 mt-auto">
+                <div class="bg-slate-50 dark:bg-gray-900 rounded-xl p-3 flex items-center justify-between mb-4">
+                    <span class="text-xs text-slate-500 font-medium">Prep Time</span>
+                    <span class="text-lg font-mono font-bold text-primary">04:32</span>
+                </div>
+                <button
+                    class="w-full bg-slate-100 dark:bg-gray-700 text-slate-400 font-bold py-3 rounded-xl cursor-not-allowed flex items-center justify-center gap-2">
+                    <span class="material-icons text-sm">check_circle</span>
+                    SERVE ORDER
+                </button>
+            </div>
+        </div>
+        <div
+            class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col border-t-4 border-t-mos-green">
+            <div
+                class="p-5 border-b border-gray-100 dark:border-gray-700 flex justify-between items-center bg-slate-50/50 dark:bg-gray-800/50">
+                <div>
+                    <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Order</span>
+                    <h3 class="text-lg font-bold">#1041</h3>
+                </div>
+                <span
+                    class="bg-green-100 dark:bg-green-900/30 text-mos-green dark:text-green-400 text-xs font-bold px-3 py-1 rounded-full border border-green-200 dark:border-green-800">READY</span>
+            </div>
+            <div class="p-5 flex-1 space-y-4">
+                <ul class="space-y-3">
+                    <li class="flex justify-between items-start">
+                        <span class="text-sm">2x <span class="font-semibold">Wagyu Burger</span></span>
+                        <span class="text-xs text-slate-400">No Onions</span>
+                    </li>
+                    <li class="flex justify-between items-start">
+                        <span class="text-sm">1x <span class="font-semibold">Iced Tea</span></span>
+                        <span class="text-xs text-slate-400">Less Ice</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="p-5 pt-0 mt-auto">
+                <div class="bg-green-50 dark:bg-green-900/10 rounded-xl p-3 flex items-center justify-between mb-4">
+                    <span class="text-xs text-mos-green font-medium">Total Prep</span>
+                    <span class="text-lg font-mono font-bold text-mos-green">10:15</span>
+                </div>
+                <button
+                    class="w-full bg-mos-green hover:bg-green-700 text-white font-bold py-3 rounded-xl transition-all shadow-lg shadow-mos-green/20 flex items-center justify-center gap-2">
+                    <span class="material-icons text-sm">check_circle</span>
+                    SERVE ORDER
+                </button>
+            </div>
+        </div>
+        <div
+            class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col border-t-4 border-t-primary">
+            <div
+                class="p-5 border-b border-gray-100 dark:border-gray-700 flex justify-between items-center bg-slate-50/50 dark:bg-gray-800/50">
+                <div>
+                    <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Order</span>
+                    <h3 class="text-lg font-bold">#1039</h3>
+                </div>
+                <span
+                    class="bg-red-100 dark:bg-red-900/30 text-primary dark:text-red-400 text-xs font-bold px-3 py-1 rounded-full border border-red-200 dark:border-red-800">PREPARING</span>
+            </div>
+            <div class="p-5 flex-1 space-y-4">
+                <ul class="space-y-3">
+                    <li class="flex justify-between items-start">
+                        <span class="text-sm">4x <span class="font-semibold">Teriyaki Burger</span></span>
+                        <span class="text-xs text-slate-400">Extra Sauce</span>
+                    </li>
+                    <li class="flex justify-between items-start">
+                        <span class="text-sm">4x <span class="font-semibold">Onion Rings</span></span>
+                        <span class="text-xs text-slate-400">Family Box</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="p-5 pt-0 mt-auto">
+                <div
+                    class="bg-red-50 dark:bg-red-900/10 rounded-xl p-3 flex items-center justify-between mb-4 animate-pulse">
+                    <span class="text-xs text-primary font-medium">Prep Time (Over)</span>
+                    <span class="text-lg font-mono font-bold text-primary">15:58</span>
+                </div>
+                <button
+                    class="w-full bg-slate-100 dark:bg-gray-700 text-slate-400 font-bold py-3 rounded-xl cursor-not-allowed flex items-center justify-center gap-2">
+                    <span class="material-icons text-sm">check_circle</span>
+                    SERVE ORDER
+                </button>
+            </div>
+        </div>
+        <div
+            class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col">
+            <div
+                class="p-5 border-b border-gray-100 dark:border-gray-700 flex justify-between items-center bg-slate-50/50 dark:bg-gray-800/50">
+                <div>
+                    <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Order</span>
+                    <h3 class="text-lg font-bold">#1044</h3>
+                </div>
+                <span
+                    class="bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-amber-200 dark:border-amber-800">PREPARING</span>
+            </div>
+            <div class="p-5 flex-1 space-y-4">
+                <ul class="space-y-3">
+                    <li class="flex justify-between items-start">
+                        <span class="text-sm">1x <span class="font-semibold">V-Burger</span></span>
+                        <span class="text-xs text-slate-400">No Pickle</span>
+                    </li>
+                    <li class="flex justify-between items-start">
+                        <span class="text-sm">1x <span class="font-semibold">Matcha Shake</span></span>
+                        <span class="text-xs text-slate-400">Regular</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="p-5 pt-0 mt-auto">
+                <div class="bg-slate-50 dark:bg-gray-900 rounded-xl p-3 flex items-center justify-between mb-4">
+                    <span class="text-xs text-slate-500 font-medium">Prep Time</span>
+                    <span class="text-lg font-mono font-bold text-primary">02:10</span>
+                </div>
+                <button
+                    class="w-full bg-slate-100 dark:bg-gray-700 text-slate-400 font-bold py-3 rounded-xl cursor-not-allowed flex items-center justify-center gap-2">
+                    <span class="material-icons text-sm">check_circle</span>
+                    SERVE ORDER
+                </button>
+            </div>
+        </div>
+        <div
+            class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col">
+            <div
+                class="p-5 border-b border-gray-100 dark:border-gray-700 flex justify-between items-center bg-slate-50/50 dark:bg-gray-800/50">
+                <div>
+                    <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Order</span>
+                    <h3 class="text-lg font-bold">#1045</h3>
+                </div>
+                <span
+                    class="bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-amber-200 dark:border-amber-800">PREPARING</span>
+            </div>
+            <div class="p-5 flex-1 space-y-4">
+                <ul class="space-y-3">
+                    <li class="flex justify-between items-start">
+                        <span class="text-sm">1x <span class="font-semibold">MOS Rice Burger</span></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="p-5 pt-0 mt-auto">
+                <div class="bg-slate-50 dark:bg-gray-900 rounded-xl p-3 flex items-center justify-between mb-4">
+                    <span class="text-xs text-slate-500 font-medium">Prep Time</span>
+                    <span class="text-lg font-mono font-bold text-primary">00:45</span>
+                </div>
+                <button
+                    class="w-full bg-slate-100 dark:bg-gray-700 text-slate-400 font-bold py-3 rounded-xl cursor-not-allowed flex items-center justify-center gap-2">
+                    <span class="material-icons text-sm">check_circle</span>
+                    SERVE ORDER
+                </button>
+            </div>
+        </div>
+        <div
+            class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col border-t-4 border-t-mos-green">
+            <div
+                class="p-5 border-b border-gray-100 dark:border-gray-700 flex justify-between items-center bg-slate-50/50 dark:bg-gray-800/50">
+                <div>
+                    <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Order</span>
+                    <h3 class="text-lg font-bold">#1040</h3>
+                </div>
+                <span
+                    class="bg-green-100 dark:bg-green-900/30 text-mos-green dark:text-green-400 text-xs font-bold px-3 py-1 rounded-full border border-green-200 dark:border-green-800">READY</span>
+            </div>
+            <div class="p-5 flex-1 space-y-4">
+                <ul class="space-y-3">
+                    <li class="flex justify-between items-start">
+                        <span class="text-sm">1x <span class="font-semibold">Dessert Cup</span></span>
+                    </li>
+                    <li class="flex justify-between items-start">
+                        <span class="text-sm">1x <span class="font-semibold">Latte</span></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="p-5 pt-0 mt-auto">
+                <div class="bg-green-50 dark:bg-green-900/10 rounded-xl p-3 flex items-center justify-between mb-4">
+                    <span class="text-xs text-mos-green font-medium">Total Prep</span>
+                    <span class="text-lg font-mono font-bold text-mos-green">05:22</span>
+                </div>
+                <button
+                    class="w-full bg-mos-green hover:bg-green-700 text-white font-bold py-3 rounded-xl transition-all shadow-lg shadow-mos-green/20 flex items-center justify-center gap-2">
+                    <span class="material-icons text-sm">check_circle</span>
+                    SERVE ORDER
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
