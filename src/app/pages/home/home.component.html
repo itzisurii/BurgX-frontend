@@ -1,29 +1,38 @@
 <div class="h-screen w-full flex flex-col overflow-hidden bg-slate-50">
-  
-  <app-top-bar class="shrink-0 z-20"></app-top-bar>
+  <app-nav-bar class="shrink-0 z-20"></app-nav-bar>
 
   <div class="flex flex-1 overflow-hidden">
-    
     <aside class="w-28 shrink-0 bg-white border-r border-gray-200 z-10">
-      <app-order-type></app-order-type>
+      <app-order-type (panelChange)="handlePanelChange($event)"></app-order-type>
     </aside>
 
     <main class="flex-1 flex flex-col overflow-hidden">
-      <div class="px-6 py-4 bg-white border-b shrink-0">
-        <app-nav-bar></app-nav-bar>
-      </div>
-
       <div class="flex-1 overflow-y-auto p-6 custom-scrollbar">
-        <app-burger-grid></app-burger-grid>
-        <app-beverages class="mt-8 block"></app-beverages>
+
+        <div *ngIf="activeView === 'dashboard'">
+          <app-burger-grid></app-burger-grid>
+          <app-beverages class="mt-8 block"></app-beverages>
+        </div>
+
+        <div *ngIf="activeView === 'orders'" class="max-w-7xl mx-auto w-full">
+          <app-all-orders></app-all-orders>
+        </div>
+
+        <div *ngIf="activeView === 'dinein'" class="w-full">
+          <app-dine-in></app-dine-in>
+        </div>
+
       </div>
     </main>
 
-    <section class="w-80 shrink-0 bg-white border-l border-gray-200 flex flex-col overflow-hidden">
-      <div class="flex-1 overflow-y-auto p-4 custom-scrollbar">
+    <section *ngIf="activeView === 'dashboard' || activeView === 'dinein'"
+      class="w-96 shrink-0 bg-white border-l border-gray-200 flex flex-col overflow-hidden">
+      
+      <div class="flex-1 overflow-y-auto p-4 custom-scrollbar bg-white">
         <app-order-cart></app-order-cart>
       </div>
-      <app-order-summary class="shrink-0 border-t"></app-order-summary>
+      
+      <app-order-summary class="shrink-0 border-t bg-white"></app-order-summary>
     </section>
 
   </div>
