@@ -8,10 +8,12 @@ import { NavBarComponent } from '../../components/nav-bar/nav-bar.component';
 import { AllOrdersComponent } from "../../components/all-orders/all-orders.component";
 import { CommonModule } from '@angular/common';
 import { DineInComponent } from "../../components/dine-in/dine-in.component";
+import { TakeawayComponent } from "../../components/takeaway/takeaway.component";
+import { TakeawaysidebarComponent } from "../../components/takeawaysidebar/takeawaysidebar.component";
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, OrderCartComponent, NavBarComponent, BurgerGridComponent, BeveragesComponent, OrderSummaryComponent, OrderTypeComponent, AllOrdersComponent, DineInComponent],
+  imports: [CommonModule, OrderCartComponent, NavBarComponent, BurgerGridComponent, BeveragesComponent, OrderSummaryComponent, OrderTypeComponent, AllOrdersComponent, DineInComponent, TakeawayComponent, TakeawaysidebarComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
