@@ -32,6 +32,12 @@
           </aside>
         </div>
 
+        <div *ngIf="activeView === 'delivery'" class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+          <div class="flex-1 overflow-y-auto p-6">
+            <app-delivery></app-delivery>
+          </div>
+        </div>
+
       </div>
     </main>
 
