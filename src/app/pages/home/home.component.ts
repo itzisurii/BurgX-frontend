@@ -10,10 +10,11 @@ import { CommonModule } from '@angular/common';
 import { DineInComponent } from "../../components/dine-in/dine-in.component";
 import { TakeawayComponent } from "../../components/takeaway/takeaway.component";
 import { TakeawaysidebarComponent } from "../../components/takeawaysidebar/takeawaysidebar.component";
+import { DeliveryComponent } from "../../components/delivery/delivery.component";
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, OrderCartComponent, NavBarComponent, BurgerGridComponent, BeveragesComponent, OrderSummaryComponent, OrderTypeComponent, AllOrdersComponent, DineInComponent, TakeawayComponent, TakeawaysidebarComponent],
+  imports: [CommonModule, OrderCartComponent, NavBarComponent, BurgerGridComponent, BeveragesComponent, OrderSummaryComponent, OrderTypeComponent, AllOrdersComponent, DineInComponent, TakeawayComponent, TakeawaysidebarComponent, DeliveryComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
