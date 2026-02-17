@@ -132,3 +132,7 @@ html, body {
   background: #dc3545; /* MOS Red */
   border-radius: 10px;
 }
+
+.overflow-y-auto {
+  scroll-behavior: smooth;
+}
