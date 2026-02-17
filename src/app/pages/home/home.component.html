@@ -1,54 +1,96 @@
-<div class="h-screen w-full flex flex-col overflow-hidden bg-slate-50">
+<div class="h-screen w-full flex flex-col bg-slate-50">
+
+  <!-- Top App Bar -->
   <app-nav-bar class="shrink-0 z-20"></app-nav-bar>
 
   <div class="flex flex-1 overflow-hidden">
+
+    <!-- LEFT SIDEBAR -->
     <aside class="w-28 shrink-0 bg-white border-r border-gray-200 z-10">
-      <app-order-type (panelChange)="handlePanelChange($event)"></app-order-type>
+      <app-order-type (panelChange)="handlePanelChange($event)">
+      </app-order-type>
     </aside>
 
+    <!-- CENTER CONTENT -->
     <main class="flex-1 flex flex-col overflow-hidden">
-      <div class="flex-1 overflow-y-auto p-6 custom-scrollbar">
 
-        <div *ngIf="activeView === 'dashboard'">
-          <app-burger-grid></app-burger-grid>
-          <app-beverages class="mt-8 block"></app-beverages>
+      <!-- CATEGORY NAV (STAYS FIXED) -->
+      <nav *ngIf="activeView === 'dashboard'" class="flex px-8 border-b border-gray-200 bg-white shrink-0">
+
+        <button (click)="scrollToSection('burgers-section')"
+          class="px-6 py-4 border-b-2 border-primary text-primary font-bold">
+          Burgers
+        </button>
+
+        <button (click)="scrollToSection('beverages-section')"
+          class="px-6 py-4 border-b-2 border-transparent text-gray-500 hover:text-primary font-bold">
+          Beverages
+        </button>
+
+        <button (click)="scrollToSection('desserts-section')"
+          class="px-6 py-4 border-b-2 border-transparent text-gray-500 hover:text-primary font-bold">
+          Desserts
+        </button>
+
+        <button (click)="scrollToSection('specials-section')"
+          class="px-6 py-4 border-b-2 border-transparent text-gray-500 hover:text-primary font-bold">
+          Specials
+        </button>
+      </nav>
+
+      <!-- SCROLL CONTAINER -->
+      <div #contentScroller class="flex-1 overflow-y-auto custom-scrollbar">
+
+        <!-- DASHBOARD -->
+        <div *ngIf="activeView === 'dashboard'" class="p-6">
+
+          <section id="burgers-section">
+            <app-burger-grid></app-burger-grid>
+          </section>
+
+          <section id="beverages-section" class="mt-10">
+            <app-beverages></app-beverages>
+          </section>
+
         </div>
 
-        <div *ngIf="activeView === 'orders'" class="max-w-7xl mx-auto w-full">
+        <!-- ORDERS -->
+        <div *ngIf="activeView === 'orders'" class="p-6">
           <app-all-orders></app-all-orders>
         </div>
 
-        <div *ngIf="activeView === 'dinein'" class="w-full">
+        <!-- DINE IN -->
+        <div *ngIf="activeView === 'dinein'" class="p-6">
           <app-dine-in></app-dine-in>
         </div>
 
-        <div *ngIf="activeView === 'takeaway'" class="flex flex-1 overflow-hidden h-full bg-slate-50">
+        <!-- TAKEAWAY -->
+        <div *ngIf="activeView === 'takeaway'" class="flex h-full">
           <div class="flex-1 overflow-y-auto p-6">
             <app-takeaway></app-takeaway>
           </div>
-
-          <aside class="w-96 shrink-0 border-l border-gray-200 bg-white overflow-y-auto">
+          <aside class="w-96 border-l bg-white">
             <app-takeawaysidebar></app-takeawaysidebar>
           </aside>
         </div>
 
-        <div *ngIf="activeView === 'delivery'" class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
-          <div class="flex-1 overflow-y-auto p-6">
-            <app-delivery></app-delivery>
-          </div>
+        <!-- DELIVERY -->
+        <div *ngIf="activeView === 'delivery'" class="p-6">
+          <app-delivery></app-delivery>
         </div>
 
       </div>
     </main>
 
+    <!-- RIGHT CART -->
     <section *ngIf="activeView === 'dashboard' || activeView === 'dinein'"
-      class="w-96 shrink-0 bg-white border-l border-gray-200 flex flex-col overflow-hidden">
+      class="w-96 shrink-0 bg-white border-l flex flex-col overflow-hidden">
 
-      <div class="flex-1 overflow-y-auto p-4 custom-scrollbar bg-white">
+      <div class="flex-1 overflow-y-auto p-4 custom-scrollbar">
         <app-order-cart></app-order-cart>
       </div>
 
-      <app-order-summary class="shrink-0 border-t bg-white"></app-order-summary>
+      <app-order-summary class="border-t"></app-order-summary>
     </section>
 
   </div>
