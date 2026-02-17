@@ -1,69 +1,120 @@
-<!-- Burgers Section -->
-<section class="mb-10 p-6 pb-2">
-    <div class="flex items-center justify-between mb-6">
-        <h2 class="text-2xl font-bold">Burgers Selection</h2>
-        <span class="text-xs text-gray-400 uppercase tracking-widest">12 Items Available</span>
+<section class="mb-10">
+
+  <!-- Section Header -->
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-xl font-bold dark:text-white">
+      Burgers Selection
+    </h2>
+    <span class="text-xs text-gray-400 uppercase tracking-widest">
+      12 Items Available
+    </span>
+  </div>
+
+  <!-- Burger Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+    <!-- Burger Card -->
+    <div
+      class="bg-white dark:bg-[#2d1a1a] p-4 rounded-xl
+             border border-primary/30 shadow-md
+             transition-shadow group flex flex-col">
+
+      <div
+        class="w-full aspect-square bg-gray-100 dark:bg-gray-800
+               rounded-lg mb-4 bg-cover bg-center"
+        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-7Wz0geHF-7-KnxF-k-Yt6kN8-U-viKKZNQHceDFrXNTHCkOtkBcL9MRNbTkJlYOc3J6FZX19bqH9usDcKb__-leSFxJ_F0oqtpPbbwOvCkdys5f8ZfvBqY1JO8umt5bH6CcaNLiiTxLE8s_blEKvXXxLYQ45y1yA49FHs7Kmxjy5h_70E7QJ30TK2tVM02xhJ1DUbxJSyQ4jaGVELnHU_Z1javxXiprY4Wx46mZ7Zhw3llRflvJ3LaIfNPV1fL7GmAfETwxfqw0')">
+      </div>
+
+      <h3
+        class="font-bold text-lg mb-1 dark:text-white
+               group-hover:text-primary">
+        Wagyu Burger
+      </h3>
+
+      <div class="flex items-center justify-between mt-1 mb-4">
+        <span class="text-primary font-bold">$6.80</span>
+        <div class="flex items-center text-xs text-gray-400">
+          <span class="material-symbols-outlined text-sm mr-1">timer</span>
+          8–12 min
+        </div>
+      </div>
+
+      <div
+        class="flex items-center justify-between
+               bg-primary/5 dark:bg-primary/10
+               p-2 rounded-lg mt-auto">
+
+        <button
+          class="size-8 rounded-full bg-white dark:bg-gray-800
+                 border border-gray-200 dark:border-gray-700
+                 flex items-center justify-center
+                 hover:bg-gray-100 active:scale-95 transition-all">
+          <span class="material-symbols-outlined text-base">remove</span>
+        </button>
+
+        <span class="font-bold text-primary">1</span>
+
+        <button
+          class="size-8 rounded-full bg-primary text-white
+                 flex items-center justify-center
+                 hover:bg-primary/90 active:scale-95
+                 transition-all shadow-sm">
+          <span class="material-symbols-outlined text-base">add</span>
+        </button>
+      </div>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        <!-- Burger Item 1 -->
-        <div
-            class="bg-white dark:bg-[#2d1a1a] p-4 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
-            <div class="w-full aspect-square bg-gray-100 dark:bg-gray-800 rounded-lg mb-4 bg-cover bg-center"
-                data-alt="Classic MOS Rice Burger with beef and lettuce"
-                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjMeI5uhOlruRyia8AvyMhMWi579eQuBK1Mp4qmXQEstdI2S-KwiGmZu-PcERucZxVW16abjCQCs3v0JT7AXKsMfMg2fXQeudhFEvfnComQ0Kj6YVc5-cMTBenUWxLMkECew2oj0YmVcRE0WEp-413ShwtHed5uiyK42HaSun8CUn3sGwJqb_z4g2PfXy_WBQgFOoi_nL-YfGDU5R0wpC8iycO_qBZqcGCJbjxsp_8LMnvDLU3SgxnBVwofG6s7G7NPF1u3U30iQc')">
-            </div>
-            <h3 class="font-bold text-lg mb-1 group-hover:text-primary">MOS Rice Burger</h3>
-            <div class="flex items-center justify-between mt-2">
-                <span class="text-primary font-bold">$4.50</span>
-                <div class="flex items-center text-xs text-gray-400">
-                    <span class="material-symbols-outlined text-sm mr-1">timer</span> 5-8 min
-                </div>
-            </div>
+
+    <!-- Second Card -->
+    <div
+      class="bg-white dark:bg-[#2d1a1a] p-4 rounded-xl
+             border border-gray-100 dark:border-gray-800
+             shadow-sm hover:shadow-md
+             transition-shadow group flex flex-col">
+
+      <div
+        class="w-full aspect-square bg-gray-100 dark:bg-gray-800
+               rounded-lg mb-4 bg-cover bg-center"
+        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjMeI5uhOlruRyia8AvyMhMWi579eQuBK1Mp4qmXQEstdI2S-KwiGmZu-PcERucZxVW16abjCQCs3v0JT7AXKsMfMg2fXQeudhFEvfnComQ0Kj6YVc5-cMTBenUWxLMkECew2oj0YmVcRE0WEp-413ShwtHed5uiyK42HaSun8CUn3sGwJqb_z4g2PfXy_WBQgFOoi_nL-YfGDU5R0wpC8iycO_qBZqcGCJbjxsp_8LMnvDLU3SgxnBVwofG6s7G7NPF1u3U30iQc')">
+      </div>
+
+      <h3
+        class="font-bold text-lg mb-1 dark:text-white
+               group-hover:text-primary">
+        MOS Rice Burger
+      </h3>
+
+      <div class="flex items-center justify-between mt-1 mb-4">
+        <span class="text-primary font-bold">$4.50</span>
+        <div class="flex items-center text-xs text-gray-400">
+          <span class="material-symbols-outlined text-sm mr-1">timer</span>
+          5–8 min
         </div>
-        <!-- Burger Item 2 -->
-        <div
-            class="bg-white dark:bg-[#2d1a1a] p-4 rounded-xl border border-primary/30 shadow-md transition-shadow cursor-pointer group">
-            <div class="w-full aspect-square bg-gray-100 dark:bg-gray-800 rounded-lg mb-4 bg-cover bg-center"
-                data-alt="Premium Wagyu Beef Burger with cheese"
-                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-7Wz0geHF-7-KnxF-k-Yt6kN8-U-viKKZNQHceDFrXNTHCkOtkBcL9MRNbTkJlYOc3J6FZX19bqH9usDcKb__-leSFxJ_F0oqtpPbbwOvCkdys5f8ZfvBqY1JO8umt5bH6CcaNLiiTxLE8s_blEKvXXxLYQ45y1yA49FHs7Kmxjy5h_70E7QJ30TK2tVM02xhJ1DUbxJSyQ4jaGVELnHU_Z1javxXiprY4Wx46mZ7Zhw3llRflvJ3LaIfNPV1fL7GmAfETwxfqw0')">
-            </div>
-            <h3 class="font-bold text-lg mb-1 group-hover:text-primary">Wagyu Burger</h3>
-            <div class="flex items-center justify-between mt-2">
-                <span class="text-primary font-bold">$6.80</span>
-                <div class="flex items-center text-xs text-gray-400">
-                    <span class="material-symbols-outlined text-sm mr-1">timer</span> 8-12 min
-                </div>
-            </div>
-        </div>
-        <!-- Burger Item 3 -->
-        <div
-            class="bg-white dark:bg-[#2d1a1a] p-4 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
-            <div class="w-full aspect-square bg-gray-100 dark:bg-gray-800 rounded-lg mb-4 bg-cover bg-center"
-                data-alt="Japanese Teriyaki Chicken Burger"
-                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWoNjrmKYUUUwFHrf0b3_dfbeX_BtR0685JE7WomNQZlL5jp-U7cn98TLO0SwF5Q-4D0NpeXmc5VCgjqc_DmDYPg6ZVWrdcpQ9z38Mi2bKRWKBlatR6LIFLZd2mIItghAnp3wpXPAl8BjiZ_Gbf8NqnHoTcScIgmhp_Jniq2nFSfaevQzpcT1b8aMTfcy_zHkpzrgrBYTyF3sYKWeaQRWGorJOstZdVOjjYFLScjfk5rd8ppgQeCSxkJ4E02LWsURRP0A0Z0CK92E')">
-            </div>
-            <h3 class="font-bold text-lg mb-1 group-hover:text-primary">Teriyaki Burger</h3>
-            <div class="flex items-center justify-between mt-2">
-                <span class="text-primary font-bold">$5.20</span>
-                <div class="flex items-center text-xs text-gray-400">
-                    <span class="material-symbols-outlined text-sm mr-1">timer</span> 5-7 min
-                </div>
-            </div>
-        </div>
-        <!-- Burger Item 4 -->
-        <div
-            class="bg-white dark:bg-[#2d1a1a] p-4 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
-            <div class="w-full aspect-square bg-gray-100 dark:bg-gray-800 rounded-lg mb-4 bg-cover bg-center"
-                data-alt="Vegetarian patty burger with fresh toppings"
-                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_r8_ed0yQgVbS7WSpQEN2hhANfAfQQBf3U3nVEt1TpAiJk-hq8-8010YyVSiPYdogw2GYR79oImCOhwqAxLoljpkOOcC40Rp1zkBxCSMuc0mo75kBDJB3k-LHys3CNCWS3xWPuLJMZ8OWAw6sQJ2Puwz9eGJ7Fyasb7P6ybzGhcW7Rhgq37JPtS5GJSnp0XWE2mrPiMEGBPEgpar2Cb89kBcA0q1DPnem8DeZMz_mIUEQzy1AHh2jVk-OnbWMnSzkwSa3xyh2BX8')">
-            </div>
-            <h3 class="font-bold text-lg mb-1 group-hover:text-primary">V-Burger</h3>
-            <div class="flex items-center justify-between mt-2">
-                <span class="text-primary font-bold">$4.90</span>
-                <div class="flex items-center text-xs text-gray-400">
-                    <span class="material-symbols-outlined text-sm mr-1">timer</span> 6-9 min
-                </div>
-            </div>
-        </div>
+      </div>
+
+      <div
+        class="flex items-center justify-between
+               bg-gray-50 dark:bg-gray-800/50
+               p-2 rounded-lg mt-auto">
+
+        <button
+          class="size-8 rounded-full bg-white dark:bg-gray-800
+                 border border-gray-200 dark:border-gray-700
+                 flex items-center justify-center
+                 hover:bg-gray-100 active:scale-95 transition-all">
+          <span class="material-symbols-outlined text-base">remove</span>
+        </button>
+
+        <span class="font-bold dark:text-white">0</span>
+
+        <button
+          class="size-8 rounded-full bg-primary text-white
+                 flex items-center justify-center
+                 hover:bg-primary/90 active:scale-95
+                 transition-all shadow-sm">
+          <span class="material-symbols-outlined text-base">add</span>
+        </button>
+      </div>
     </div>
+
+  </div>
 </section>
