@@ -13,6 +13,7 @@ import { TakeawayComponent } from '../../components/takeaway/takeaway.component'
 import { TakeawaysidebarComponent } from '../../components/takeawaysidebar/takeawaysidebar.component';
 import { DeliveryComponent } from '../../components/delivery/delivery.component';
 import { DessertsComponent } from "../../components/desserts/desserts.component";
+import { SpecialsComponent } from "../../components/specials/specials.component";
 
 @Component({
   selector: 'app-home',
@@ -30,7 +31,8 @@ import { DessertsComponent } from "../../components/desserts/desserts.component"
     TakeawayComponent,
     TakeawaysidebarComponent,
     DeliveryComponent,
-    DessertsComponent
+    DessertsComponent,
+    SpecialsComponent
 ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
