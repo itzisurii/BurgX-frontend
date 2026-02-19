@@ -1,0 +1,21 @@
+/* Base button style */
+.type-btn {
+  @apply w-12 h-12 flex items-center justify-center rounded-xl transition-all duration-200 text-gray-400 hover:bg-gray-100;
+}
+
+/* The Active State */
+.type-btn.active {
+  @apply bg-red-50 text-red-600 shadow-sm;
+  /* If you prefer the dark theme/blue look, change bg-red-50 to bg-gray-100 and text-black */
+}
+
+/* Optional: Add a small vertical indicator bar like high-end POS systems */
+.type-btn.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 24px;
+  width: 4px;
+  background-color: #ef4444; /* tailwind red-500 */
+  border-radius: 0 4px 4px 0;
+}

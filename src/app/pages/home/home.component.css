@@ -1,0 +1,32 @@
+/* SECTION: FORCED HEIGHTS */
+:host {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Custom Scrollbar for a clean POS look */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: #ef4444; /* Turns MOS Red on hover */
+}
+
+/* Custom colors for the Order Tracker */
+.text-mos-green { color: #008a45; }
+.bg-mos-green { background-color: #008a45; }
+.border-t-mos-green { border-top-color: #008a45; }
+
+.text-primary { color: #e31837; } /* McDonald's/MOS Red */
+.bg-primary { background-color: #e31837; }
+.border-t-primary { border-top-color: #e31837; }
+
+/* Ensure the grid has a background to stand out from the slate-50 page */
+.bg-white { background-color: #ffffff; }

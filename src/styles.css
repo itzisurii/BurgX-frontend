@@ -1,0 +1,138 @@
+/* 1. Define Brand Colors */
+:root {
+  --primary: #ec1313;
+  --bg-light: #f8f6f6;
+  --bg-dark: #221010;
+  --text-dark: #181111;
+  --white: #ffffff;
+  --border: #e5e7eb;
+}
+
+/* 2. Layout Lock - Force the 2-column view */
+html, body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Work Sans', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+/* Manually defining the classes you have in your HTML */
+.container-fluid {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.col-9 {
+  flex: 0 0 75%; /* 75% width for the menu */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--bg-light);
+}
+
+.col-3 {
+  flex: 0 0 25%; /* 25% width for the cart */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--white);
+  border-left: 1px solid var(--border);
+}
+
+/* 3. Utility Helpers */
+.d-flex { display: flex; }
+.flex-column { flex-direction: column; }
+.flex-grow-1 { flex-grow: 1; }
+.overflow-auto { overflow: auto; }
+.mt-auto { margin-top: auto; }
+.p-0 { padding: 0; }
+.p-4 { padding: 1.5rem; }
+
+/* 4. Missing Text Fixes */
+/* This ensures your totals and labels show up dark */
+.text-dark, h1, h2, h3, h4, h5, p, span {
+  color: var(--text-dark);
+}
+
+.text-primary { color: var(--primary) !important; }
+.bg-primary { background-color: var(--primary) !important; color: white !important; }
+
+/* Scrollbar styling */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* SECTION: COMPACT BUTTON STYLING */
+
+/* Style for the small category buttons */
+.btn-outline-secondary {
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #f8f9fa !important;
+    color: #dc3545 !important;
+}
+
+/* Specific styling for the Left Sidebar Nav links */
+.nav-link {
+    transition: transform 0.1s ease;
+}
+
+.nav-link:active {
+    transform: scale(0.95);
+}
+
+.nav-link.active {
+    border: 1px solid #f8d7da !important;
+}
+
+/* Ensure the main wrapper is exactly the screen height */
+.vh-100 {
+  height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Force the scroll behavior */
+.scroll-container {
+  height: 100%; /* Important: Tells the div to take up available space */
+  overflow-y: auto !important;
+  display: block;
+}
+
+/* Panel Widths */
+.sidebar-container {
+  width: 140px; /* As requested, a bit bigger */
+  flex-shrink: 0;
+}
+
+.cart-panel {
+  width: 350px;
+  flex-shrink: 0;
+}
+
+/* Optional: Hide scrollbar but keep functionality for a cleaner UI */
+.scroll-container::-webkit-scrollbar {
+  width: 4px;
+}
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #dc3545; /* MOS Red */
+  border-radius: 10px;
+}
+
+.overflow-y-auto {
+  scroll-behavior: smooth;
+}

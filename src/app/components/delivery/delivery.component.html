@@ -1,0 +1,220 @@
+<div class="flex-1 overflow-hidden flex flex-col gap-6 p-6">
+    <div class="flex items-center justify-between">
+        <h2 class="text-2xl font-bold">Delivery Management</h2>
+        <div class="flex gap-2">
+            <button
+                class="px-4 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-red-700 transition-colors shadow-sm">Active
+                Orders (12)</button>
+            <button
+                class="px-4 py-2 bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-semibold rounded-lg hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">History</button>
+        </div>
+    </div>
+    <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-6 overflow-hidden">
+        <div class="flex flex-col gap-4 overflow-hidden">
+            <div class="flex items-center justify-between px-2">
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-outlined text-primary">directions_bike</span>
+                    <h3 class="font-bold">In-House Delivery</h3>
+                    <span class="bg-primary/10 text-primary text-xs font-bold px-2 py-0.5 rounded-full">4</span>
+                </div>
+            </div>
+            <div class="flex-1 overflow-y-auto custom-scrollbar flex flex-col gap-4 pr-1">
+                <div
+                    class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <div class="flex justify-between items-start mb-3">
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Order
+                                #MOS-8821</span>
+                            <p class="font-bold text-lg">2.4 km</p>
+                        </div>
+                        <div
+                            class="bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 text-[10px] font-bold px-2 py-1 rounded uppercase">
+                            Assigning Driver</div>
+                    </div>
+                    <div class="space-y-1 mb-4">
+                        <p class="text-sm text-slate-600 dark:text-slate-400 flex items-start gap-1">
+                            <span class="material-icons-outlined text-base">location_on</span>
+                            124 Orchard Rd, Unit #04-12
+                        </p>
+                        <p class="text-sm font-medium pl-5 italic">2x Wagyu Burger, 1x Large Fries, 1x Coke</p>
+                    </div>
+                    <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-3">
+                        <div class="flex items-center gap-1 text-primary">
+                            <span class="material-icons-outlined text-sm">timer</span>
+                            <span class="font-bold">12:45</span>
+                        </div>
+                        <button
+                            class="bg-primary text-white text-sm font-bold px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">Dispatch</button>
+                    </div>
+                </div>
+                <div
+                    class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <div class="flex justify-between items-start mb-3">
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Order
+                                #MOS-8825</span>
+                            <p class="font-bold text-lg">0.8 km</p>
+                        </div>
+                        <div
+                            class="bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-[10px] font-bold px-2 py-1 rounded uppercase">
+                            Out for Delivery</div>
+                    </div>
+                    <div class="space-y-1 mb-4">
+                        <p class="text-sm text-slate-600 dark:text-slate-400 flex items-start gap-1">
+                            <span class="material-icons-outlined text-base">location_on</span>
+                            55 Serangoon North Ave 4
+                        </p>
+                        <p class="text-sm font-medium pl-5 italic">1x Teriyaki Chicken Burger, 1x Green Tea</p>
+                    </div>
+                    <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-3">
+                        <div class="flex items-center gap-1 text-slate-500">
+                            <span class="material-icons-outlined text-sm">timer</span>
+                            <span class="font-bold">04:12</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs font-medium text-slate-500">
+                            <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+                            Driver: John Doe
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-4 overflow-hidden">
+            <div class="flex items-center justify-between px-2">
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-outlined text-emerald-600">delivery_dining</span>
+                    <h3 class="font-bold">UberEats</h3>
+                    <span
+                        class="bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 text-xs font-bold px-2 py-0.5 rounded-full">5</span>
+                </div>
+            </div>
+            <div class="flex-1 overflow-y-auto custom-scrollbar flex flex-col gap-4 pr-1">
+                <div
+                    class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm border-l-4 border-l-emerald-500">
+                    <div class="flex justify-between items-start mb-3">
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Order
+                                #UBER-192-A</span>
+                            <p class="font-bold text-lg">3.2 km</p>
+                        </div>
+                        <div
+                            class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold px-2 py-1 rounded uppercase">
+                            Delivered</div>
+                    </div>
+                    <div class="space-y-1 mb-4">
+                        <p class="text-sm text-slate-600 dark:text-slate-400 flex items-start gap-1">
+                            <span class="material-icons-outlined text-base">location_on</span>
+                            88 Bencoolen St, #02-01
+                        </p>
+                        <p class="text-sm font-medium pl-5 italic">3x Fish Burger, 3x Corn Soup</p>
+                    </div>
+                    <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-3">
+                        <div class="flex items-center gap-1 text-slate-400">
+                            <span class="material-icons-outlined text-sm">check_circle</span>
+                            <span class="font-bold">Finished</span>
+                        </div>
+                        <button class="text-primary text-xs font-bold hover:underline">View Receipt</button>
+                    </div>
+                </div>
+                <div
+                    class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm border-l-4 border-l-emerald-500">
+                    <div class="flex justify-between items-start mb-3">
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Order
+                                #UBER-224-B</span>
+                            <p class="font-bold text-lg">1.5 km</p>
+                        </div>
+                        <div
+                            class="bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 text-[10px] font-bold px-2 py-1 rounded uppercase">
+                            Preparing</div>
+                    </div>
+                    <div class="space-y-1 mb-4">
+                        <p class="text-sm text-slate-600 dark:text-slate-400 flex items-start gap-1">
+                            <span class="material-icons-outlined text-base">location_on</span>
+                            15 Marina Way
+                        </p>
+                        <p class="text-sm font-medium pl-5 italic">1x MOS Burger, 1x Fries (S)</p>
+                    </div>
+                    <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-3">
+                        <div class="flex items-center gap-1 text-primary animate-pulse">
+                            <span class="material-icons-outlined text-sm">restaurant</span>
+                            <span class="font-bold">08:55</span>
+                        </div>
+                        <span class="text-[10px] text-slate-400 font-bold uppercase">Ready in 2 min</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-4 overflow-hidden">
+            <div class="flex items-center justify-between px-2">
+                <div class="flex items-center gap-2">
+                    <span class="material-icons-outlined text-green-600">sports_motorsports</span>
+                    <h3 class="font-bold">Grab Food</h3>
+                    <span
+                        class="bg-green-100 dark:bg-green-900/40 text-green-600 dark:text-green-400 text-xs font-bold px-2 py-0.5 rounded-full">3</span>
+                </div>
+            </div>
+            <div class="flex-1 overflow-y-auto custom-scrollbar flex flex-col gap-4 pr-1">
+                <div
+                    class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm border-l-4 border-l-green-600">
+                    <div class="flex justify-between items-start mb-3">
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Order
+                                #GRAB-V481</span>
+                            <p class="font-bold text-lg">4.1 km</p>
+                        </div>
+                        <div
+                            class="bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-[10px] font-bold px-2 py-1 rounded uppercase">
+                            Out for Delivery</div>
+                    </div>
+                    <div class="space-y-1 mb-4">
+                        <p class="text-sm text-slate-600 dark:text-slate-400 flex items-start gap-1">
+                            <span class="material-icons-outlined text-base">location_on</span>
+                            10 Jurong East St 12
+                        </p>
+                        <p class="text-sm font-medium pl-5 italic">4x Cheese Burger, 4x Nuggets, 4x Pepsi</p>
+                    </div>
+                    <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-3">
+                        <div class="flex items-center gap-1 text-slate-500">
+                            <span class="material-icons-outlined text-sm">timer</span>
+                            <span class="font-bold">18:20</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs font-medium text-slate-500">
+                            <img alt="Driver Avatar" class="w-5 h-5 rounded-full"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNbWIdtWxScgx55yIUURe_snhHmQqtVJM__xVxvkdD6NKPKnlIHZ3R9u8ABbCzauyLxxvjDfLRZ-5kpUZpzEwpqHJDeuN0alYUeqkVZMd9Y8_RFgfeWYO36DVfBFMdkGYrQiTSSe-McoxnLMLGNtsA4IXKTMjRPLUXFgyWXLJ1vDY-3f3wdbn6e_u_amcKSUzFU1pCiv138wXxCy1GXxUESmA8_cJtI9v-rxr4Q-ywjem318_jRrUdcoYe7AWzbLX91-G75Rk_8dM" />
+                            Sam L.
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm border-l-4 border-l-green-600">
+                    <div class="flex justify-between items-start mb-3">
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Order
+                                #GRAB-K009</span>
+                            <p class="font-bold text-lg">2.0 km</p>
+                        </div>
+                        <div
+                            class="bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 text-[10px] font-bold px-2 py-1 rounded uppercase">
+                            Assigning Driver</div>
+                    </div>
+                    <div class="space-y-1 mb-4">
+                        <p class="text-sm text-slate-600 dark:text-slate-400 flex items-start gap-1">
+                            <span class="material-icons-outlined text-base">location_on</span>
+                            42 Tanjong Pagar Road
+                        </p>
+                        <p class="text-sm font-medium pl-5 italic">2x Spicy Seafood Burger</p>
+                    </div>
+                    <div class="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-3">
+                        <div class="flex items-center gap-1 text-primary">
+                            <span class="material-icons-outlined text-sm">timer</span>
+                            <span class="font-bold">02:15</span>
+                        </div>
+                        <button
+                            class="bg-primary text-white text-sm font-bold px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">Dispatch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
